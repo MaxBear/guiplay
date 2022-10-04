@@ -1,0 +1,48 @@
+{
+   "name": "ivr-play",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "start": "HOST=max.mns.vc REACT_APP_VERSION=1.0.10734 REACT_APP_API_USER=apiadmin REACT_APP_API_PASSWORD=gokstad REACT_APP_WSS_USER=wssadmin REACT_APP_WSS_PASSWORD=pokemon REACT_APP_API_HOST=max.mns.vc REACT_APP_ENABLE_DTMF=false react-scripts start",
+      "build": "REACT_APP_VERSION=1.0.10734 REACT_APP_API_USER=apiadmin REACT_APP_API_PASSWORD=gokstad REACT_APP_WSS_USER=wssadmin REACT_APP_WSS_PASSWORD=pokemon REACT_APP_API_HOST=max.mns.vc REACT_APP_ENABLE_DTMF=false react-scripts build",
+      "eject": "react-scripts eject",
+      "test": "react-scripts test"
+   },
+   "author": "Nancy Yang",
+   "license": "ISC",
+   "devDependencies": {
+      "react-scripts-cssmodules": "^1.1.10"
+   },
+   "dependencies": {
+      "@material-ui/core": "^4.11.0",
+      "@material-ui/icons": "^4.9.1",
+      "@material-ui/lab": "^4.0.0-alpha.56",
+      "ajv": "^6.5.2",
+      "axios": "^0.18.0",
+      "classnames": "^2.2.5",
+      "jquery": "^1.9.1",
+      "moment": "^2.22.1",
+      "popper.js": "^1.14.4",
+      "prop-types": "^15.6.1",
+      "react": "^16.4.2",
+      "react-bootstrap": "^0.32.1",
+      "react-datetime": "^2.14.0",
+      "react-dom": "^16.4.2",
+      "react-faux-dom": "^4.2.0",
+      "react-native-md5": "^1.0.0",
+      "react-redux": "^5.0.7",
+      "react-router-bootstrap": "^0.24.4",
+      "react-router-dom": "^4.2.2",
+      "redux": "^3.5.2",
+      "redux-logger": "^3.0.6",
+      "redux-thunk": "^2.1.0",
+      "webpack-dev-server": "^2.11.2"
+   },
+   "proxy": {
+      "/play/api": {
+         "target": "https://max.mns.vc:5004",
+         "ws": true
+      }
+   }
+}
